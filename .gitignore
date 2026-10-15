@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv*/
+.env*
+.data/
+*.npy
+*.npz
+*.parquet
+*.csv
+results/new-runs/
+*.pdf
+*.png

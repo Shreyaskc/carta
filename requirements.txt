@@ -1,0 +1,20 @@
+# Evaluation, figures, tables (CPU is sufficient)
+numpy
+pandas
+pyarrow              # read the IEEE parquet
+scipy
+scikit-learn
+matplotlib
+umap-learn           # UMAP-16 representation baseline + exploratory UMAP figures
+catboost             # supervised-skyline baseline
+powerlaw             # power-law detection in the continuous-feature preconditioner
+joblib
+tqdm
+
+# GATER self-supervised training (a GPU is strongly recommended; CPU works for
+# tiny smoke runs only). Install a jax build matching your CUDA/CPU platform:
+#   CPU:  pip install "jax[cpu]"
+#   GPU:  pip install "jax[cuda12]"  (or the wheel matching your CUDA)
+jax
+flax
+optax

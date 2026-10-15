@@ -1,0 +1,118 @@
+{
+  "dataset": "ieee_cis",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 300,
+  "methods": {
+    "pca16": {
+      "lin_auprc": 0.1124,
+      "lin_auprc_std": 0.0014,
+      "gbdt_auprc": 0.4547,
+      "silhouette": 0.1516,
+      "best_k": 7,
+      "train_seconds": 0.1,
+      "label_efficiency": {
+        "0.01": 0.1047,
+        "0.05": 0.1109,
+        "0.10": 0.1103,
+        "0.25": 0.1137,
+        "1.00": 0.1124
+      }
+    },
+    "ae": {
+      "lin_auprc": 0.1788,
+      "lin_auprc_std": 0.0032,
+      "gbdt_auprc": 0.4678,
+      "silhouette": 0.2148,
+      "best_k": 7,
+      "train_seconds": 319.3,
+      "label_efficiency": {
+        "0.01": 0.1469,
+        "0.05": 0.1702,
+        "0.10": 0.1783,
+        "0.25": 0.1763,
+        "1.00": 0.1789
+      }
+    },
+    "sae": {
+      "lin_auprc": 0.1393,
+      "lin_auprc_std": 0.0032,
+      "gbdt_auprc": 0.4458,
+      "silhouette": 0.2246,
+      "best_k": 7,
+      "train_seconds": 302.9,
+      "label_efficiency": {
+        "0.01": 0.1346,
+        "0.05": 0.138,
+        "0.10": 0.1375,
+        "0.25": 0.1382,
+        "1.00": 0.1393
+      }
+    },
+    "vanilla_vae": {
+      "lin_auprc": 0.0834,
+      "lin_auprc_std": 0.0019,
+      "gbdt_auprc": 0.4431,
+      "silhouette": 0.7174,
+      "best_k": 6,
+      "train_seconds": 286.3,
+      "label_efficiency": {
+        "0.01": 0.0825,
+        "0.05": 0.0812,
+        "0.10": 0.0804,
+        "0.25": 0.0797,
+        "1.00": 0.0834
+      }
+    },
+    "scarf": {
+      "lin_auprc": 0.2136,
+      "lin_auprc_std": 0.0047,
+      "gbdt_auprc": 0.4908,
+      "silhouette": 0.0855,
+      "best_k": 5,
+      "train_seconds": 787.7,
+      "label_efficiency": {
+        "0.01": 0.2172,
+        "0.05": 0.2107,
+        "0.10": 0.2154,
+        "0.25": 0.2146,
+        "1.00": 0.2136
+      }
+    },
+    "gater": {
+      "lin_auprc": 0.2124,
+      "lin_auprc_std": 0.0053,
+      "gbdt_auprc": 0.4503,
+      "silhouette": 0.0808,
+      "best_k": 3,
+      "train_seconds": 506.4,
+      "label_efficiency": {
+        "0.01": 0.1872,
+        "0.05": 0.2118,
+        "0.10": 0.2124,
+        "0.25": 0.2139,
+        "1.00": 0.2124
+      }
+    },
+    "umap16": {
+      "lin_auprc": 0.0499,
+      "lin_auprc_std": 0.0008,
+      "gbdt_auprc": 0.3574,
+      "silhouette": 0.2017,
+      "best_k": 7,
+      "train_seconds": 1318.3,
+      "label_efficiency": {
+        "0.01": 0.0463,
+        "0.05": 0.0487,
+        "0.10": 0.0494,
+        "0.25": 0.0495,
+        "1.00": 0.05
+      }
+    }
+  }
+}

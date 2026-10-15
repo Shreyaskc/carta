@@ -1,0 +1,75 @@
+{
+  "dataset": "ieee_cis",
+  "n_rows": 590540,
+  "fraud_rate": 0.03499000914417313,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "model": "catboost",
+  "params": {
+    "iterations": 200,
+    "depth": 6,
+    "learning_rate": 0.1,
+    "auto_class_weights": "Balanced"
+  },
+  "numeric": [
+    "transaction_amt",
+    "card1",
+    "card2",
+    "card3",
+    "card5",
+    "addr1",
+    "addr2",
+    "C1",
+    "C2",
+    "C5",
+    "C13",
+    "C14",
+    "D1",
+    "D10",
+    "D15"
+  ],
+  "categorical": [
+    "product_cd",
+    "card4",
+    "card6"
+  ],
+  "full_label": {
+    "catboost": {
+      "gbdt": {
+        "auprc": 0.5076833453443518,
+        "auc": 0.9074752348683811,
+        "auprc_std": 0.004716996669207677,
+        "auc_std": 0.0018095883768383832
+      }
+    }
+  },
+  "label_efficiency": {
+    "catboost": {
+      "0.01": {
+        "auprc": 0.3479883168939366,
+        "auc": 0.7947636465363311
+      },
+      "0.05": {
+        "auprc": 0.4452556421834678,
+        "auc": 0.8581781353261588
+      },
+      "0.10": {
+        "auprc": 0.47468733413879544,
+        "auc": 0.8797313535973593
+      },
+      "0.25": {
+        "auprc": 0.4921492541295519,
+        "auc": 0.8965110062591954
+      },
+      "1.00": {
+        "auprc": 0.5073943806251351,
+        "auc": null
+      }
+    }
+  }
+}

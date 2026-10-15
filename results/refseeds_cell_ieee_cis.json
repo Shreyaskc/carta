@@ -1,0 +1,64 @@
+{
+  "full_label": {
+    "gater16": {
+      "linear": {
+        "auprc": null,
+        "auprc_std": null,
+        "auc": null,
+        "auc_std": null
+      },
+      "gbdt": {
+        "auprc": null,
+        "auprc_std": null,
+        "auc": 0.8821442749119693,
+        "auc_std": 0.0026720109032356493
+      },
+      "n_train_seeds": 5,
+      "excision": "cell",
+      "std_kind": "training-seed"
+    }
+  },
+  "label_efficiency": {
+    "gater16": {
+      "0.01": {
+        "auprc": 0.2455296266010496,
+        "auprc_std": 0.03178428980506833
+      },
+      "0.05": {
+        "auprc": 0.23024797536633387,
+        "auprc_std": 0.03692488388772022
+      },
+      "0.10": {
+        "auprc": 0.23110614177467537,
+        "auprc_std": 0.040068127820243035
+      },
+      "0.25": {
+        "auprc": 0.22841930862453103,
+        "auprc_std": 0.03866243398164003
+      },
+      "1.00": {
+        "auprc": 0.22656867247043927,
+        "auprc_std": 0.03901102867356876
+      }
+    }
+  },
+  "gater16_provenance": {
+    "runner": "run_reference_seeds.py",
+    "config": "cell",
+    "train_overrides": {},
+    "train_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "probe_seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 300,
+    "batch": 16384
+  }
+}
