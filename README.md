@@ -2,7 +2,7 @@
 
 CARTA learns compact transaction representations from mixed numeric and categorical features without fraud labels. A frozen embedding can then be evaluated with supervised fraud probes and exploratory clustering.
 
-This is the companion implementation for **CARTA: Self-Supervised Reusable Transaction Embeddings via Heterogeneous Tokenization and Cross-Attention**, ICAIF 2026. Final author and publication metadata will be added before release; no DOI or software license is currently supplied.
+This is the companion implementation for **CARTA: Self-Supervised Reusable Transaction Embeddings via Heterogeneous Tokenization and Cross-Attention**, ICAIF 2026. Final author and publication metadata are pending; no DOI is currently supplied.
 
 The implemented encoder projects numeric and low-cardinality inputs into shared tokens, embeds high-cardinality identifiers, and uses learned queries with cross-attention to produce a 16-dimensional latent mean. Training combines reconstruction, KL regularization and contrastive learning. See [architecture](docs/architecture.md) for the exact data flow and important implementation details.
 
@@ -35,3 +35,7 @@ The main entry points are [gater_runner.py](gater_runner.py) for encoder trainin
 The CPU example and targeted synthetic tests are supported. Training, figure generation, full model serialization and benchmark metrics remain unverified. Raw datasets, learned embeddings, checkpoints and the manuscript are not included. The implementation has known method ambiguities and historical result discrepancies; see the limitations and reproducibility guides.
 
 See [citation guidance](docs/citation.md) before citing or releasing this package.
+
+## License
+
+CARTA code is licensed under the [MIT License](LICENSE) (SPDX: `MIT`), copyright © 2026 Shreyas Chandrahas. Third-party datasets and dependencies retain their own licenses; this code license does not relicense the conference manuscript. Preserve any applicable third-party notices.
